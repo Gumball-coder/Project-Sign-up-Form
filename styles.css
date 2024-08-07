@@ -1,0 +1,202 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('fonts/Norse-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: title;
+    src: url('fonts/Jellee-Roman.ttf');
+}
+
+@font-face {
+    font-family: about;
+    src: url('fonts/Geist-Regular.otf');
+}
+
+:root{
+    --bg-color: rgb(244, 233, 233);
+    --rowDistance: 700px;
+}
+
+body {
+    height: 100%;
+    background: var(--bg-color);
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+}
+
+.teacher{
+    width: 900px;
+    position: relative;
+    top: 350px;
+    right: 5px;
+}
+
+.odin{
+    width: 900px;
+    position: relative;
+    bottom: 555px;
+    background: rgba(100,100,100, 0.6);
+    height: 300px;
+}
+
+.odin_pic{
+    width: 200px;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+}
+
+.caption{
+    position: relative;
+    font-size: 100px;
+    top: 130px;
+    left: 250px;
+    color: white;
+    font-family: 'MyFont';
+}
+
+.left-side{
+    width: 900px;
+    height: 120vh;
+    background-color: rgb(155, 210, 142);
+}
+
+.right-side {
+    position: relative;
+    left: 900px;
+    width: 1800px;
+    background-color: var(--bg-color);
+    padding-left: 80px;
+    padding-right: 30px;
+    bottom: 1950px;
+    height: 100vh;
+}
+
+.title{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    font-family: 'title';
+    padding-top: 25px;
+}
+
+.about{
+    padding-top: 10px;
+    font-size: 28px;
+    font-family: 'about';
+    color: black;
+    padding-bottom: 50px;
+}
+
+form{
+    background-color: whitesmoke;
+    height: 500px;
+    width: 120%;
+    margin-left: -80px;
+    box-shadow: 5px 5px 15px gray;
+    padding-left: 80px;
+    padding-top: 40px;
+}
+
+.form_title{
+    font-size: 40px;
+    font-family: 'about';
+    padding: 20px 0px;
+    margin-bottom: 20px;
+}
+
+.input_screen{
+    width: 900px;
+    font-family: 'about';
+    font-size: 20px;
+}
+
+.name_row{
+    font-size: 23px;
+    margin-bottom: 8px;
+
+}
+
+.name_row > label:nth-child(2){
+    position: absolute;
+    left: var(--rowDistance);
+
+}
+
+.input_row{
+    margin-bottom: 30px;
+}
+
+.input_row > input:nth-child(2){
+    position: absolute;
+    left: var(--rowDistance);
+}
+
+input{
+    height: 42px;
+    width: 450px;
+    font-size: 28px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    box-shadow: none;
+}
+
+input:focus{
+    box-shadow: 9px 9px 5px gray;
+}
+
+input[type="submit"]{
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    top: 100px;
+    height: 90px;
+    width: 420px;
+    background-color: rgb(133, 185, 51);
+    color: rgb(242, 242, 242);
+    box-shadow: 5px 5px 5px gray;
+}
+
+input[type="submit"]:active{
+    box-shadow: 5px 5px 5px gray;
+    background-color: rgb(248, 104, 104);
+}
+
+.log_in{
+    position: relative;
+    top: 190px;
+    font-size: 25px;
+    font-family: 'about';
+}
+
+a{
+    color: rgb(142, 191, 64);
+}
+
+input:invalid{
+    border: 1px solid rgb(255, 93, 93);
+}
+
+.verif{
+    position: relative;
+    bottom: 60px;
+    color: red;
+    font-size: 20px;
+    font-family: 'about';
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "styles.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="left-side">
+        <div class = "backg">
+            <img src = "images/teacher bg.jpg" class="teacher">
+        </div>
+        <div class="odin">
+            <img src="images/odin-lined.png" class="odin_pic">
+            <div class="caption">
+                THE ODIN PROJECT
+            </div>
+        </div>
+    </div>
+    <div class="right-side">
+        <div class="title">
+            Saran's personalised AP tutoring 😊
+        </div>
+        <div class="about">
+            Come Join a teacher who is willing to put their all in not telling you what to do, but educating you on the process.
+            This extensive course will teach you all about the ways you can reach those elusive 5s you've been looking for.
+            <br>
+            <br>
+            About me:
+            <br>
+            I'm currently studying Computer Science + Physics at UIUC, and got 5s in:
+            <ul>
+                <li>AP Phys 1</li>
+                <li>AP Phys 2</li>
+                <li>AP Calc AB</li>
+            </ul>
+            Another fun fact - I'm entirely self-taught, which made me find interesting ways to learn the subject. So tips and tricks are abound here.
+            <br>
+            Don't worry you're in good hands!
+        </div>
+        <form>
+            <div class="form_title">
+                Let's do this!
+            </div>
+            <div class="input_screen">
+                <div class="name_row">
+                    <label for="fname">FIRST NAME</label>
+                    <label for="lname">LAST NAME</label>
+                </div>
+                <div class="input_row">
+                    <input type="text" id="fname" placeholder="John">
+                    <input type="text" id="lname" placeholder="Doe">
+                </div>
+            </div>
+            <div class="input_screen">
+                <div class="name_row">
+                    <label for="email">EMAIL</label>
+                    <label for="pnum">PHONE NUMBER</label>
+                </div>
+                <div class="input_row">
+                    <input type="email" id="email" placeholder="email@email.com">
+                    <input type="text" id="pnum" pattern = "\(?[+]?\d{3}\)?[- ]?\d{3}[- ]?\d{4}" placeholder="(XXX)-XXX-XXXX">
+                </div>
+            </div>
+            <div class="input_screen">
+                <div class="name_row">
+                    <label for="password">PASSWORD</label>
+                    <label for="cpassword">CONFIRM PASSWORD</label>
+                </div>
+                <div class="input_row">
+                    <input id="password" type="password">
+                    <input id="cpassword" type="password">
+                </div>
+            </div>
+            <div class="create_account">
+                <input type="submit" value="Submit form" id="subm">
+            </div>
+        </form>
+        <div id="verif" class="verif"></div>
+        <div class="log_in">
+            Already have an account? <a href="https://www.theodinproject.com">Log in</a>
+        </div>
+</body>
+</html>
+
